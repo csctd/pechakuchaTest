@@ -1,7 +1,7 @@
 Hello, world
 ============
 
-.. toctree::
+
    somefile.rst
    someotherfile.rst
 
