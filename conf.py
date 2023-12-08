@@ -15,14 +15,14 @@ author = 'Your Name'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
-    "myst_nb",
-    "ablog",
-    'sphinx.ext.intersphinx',
-    "sphinx_design",
-    "sphinxext.opengraph",
-    "todo",
-]
+import os
+import sys
+
+sys.path.append(os.path.abspath("./_ext"))
+
+extensions = ['todo']
+
+todo_include_todos = False
 
 # "sphinxext.rediraffe",
 
