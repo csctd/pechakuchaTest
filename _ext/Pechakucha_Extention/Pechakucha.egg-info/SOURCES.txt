@@ -1,8 +1,0 @@
-setup.py
-Pechakucha/__init__.py
-Pechakucha/pechakucha.py
-Pechakucha.egg-info/PKG-INFO
-Pechakucha.egg-info/SOURCES.txt
-Pechakucha.egg-info/dependency_links.txt
-Pechakucha.egg-info/requires.txt
-Pechakucha.egg-info/top_level.txt
