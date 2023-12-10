@@ -1,0 +1,1 @@
+from .pechakucha import setup

@@ -3,7 +3,7 @@ import sys
 
 sys.path.append(os.path.abspath("./_ext"))
 
-extensions = ['todo']
+# extensions = ['todo']
 
 todo_include_todos = False
 
@@ -37,6 +37,8 @@ extensions = [
     #"ablog",
     'sphinx.ext.intersphinx',
     "sphinx_design",
+    'pechakucha',
+    'todo',
     #"sphinxext.opengraph",
 ]
 
