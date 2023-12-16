@@ -1,9 +1,7 @@
 import os
 import sys
-import sphinx_rtd_theme
+sys.path.insert(0, os.path.abspath('_ext'))  # Adjust '_ext' to your directory's path
 
-
-sys.path.append(os.path.abspath("./_ext"))
 
 # extensions = ['todo']
 
@@ -15,7 +13,15 @@ project = 'Site Title'
 copyright = '2023, Your name'
 author = 'Your Name'
 
-extensions = ['pechakucha.pechakucha']
+extensions = [
+    'Pechakucha.pechakucha_directive',   
+     #"myst_nb",
+    #"ablog",
+    'sphinx.ext.intersphinx',
+    "sphinx_design",
+    'todo',
+    #"sphinxext.opengraph",
+    ]
 # ----------------------------------------------------------------------------
 #            Below here does not need to be edited for the lab
 # ----------------------------------------------------------------------------
@@ -39,19 +45,9 @@ html_theme_options = {
 }
 
 # Specify 'dirhtml' as one of the builders
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # ...
 
-
-extensions = [
-    #"myst_nb",
-    #"ablog",
-    'sphinx.ext.intersphinx',
-    "sphinx_design",
-    'todo',
-    #"sphinxext.opengraph",
-]
 
 # "sphinxext.rediraffe",
 
@@ -143,6 +139,5 @@ myst_enable_extensions = [
 
 def setup(app):
     app.add_css_file("custom.css")
-    # app.add_js_file("custom.js")
-
+    app.add_js_file("custom.js")
 

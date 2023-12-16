@@ -1,5 +1,5 @@
 Welcome to my profile site!
-============
+====================================
 
 .. toctree:: 
    somefile.rst
