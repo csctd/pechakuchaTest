@@ -1,11 +1,27 @@
+import os
+import sys
+sys.path.insert(0, os.path.abspath('_ext'))  # Adjust '_ext' to your directory's path
+
+
+# extensions = ['todo']
+
+todo_include_todos = False
+
 # -- Project information -----------------------------------------------------
 
 project = 'Site Title'
 copyright = '2023, Your name'
 author = 'Your Name'
 
-
-
+extensions = [
+    'Pechakucha.pechakucha_directive',   
+    "myst_nb",
+    #"ablog",
+    'sphinx.ext.intersphinx',
+    "sphinx_design",
+    'todo',
+    #"sphinxext.opengraph",
+    ]
 # ----------------------------------------------------------------------------
 #            Below here does not need to be edited for the lab
 # ----------------------------------------------------------------------------
@@ -15,6 +31,22 @@ author = 'Your Name'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+
+# conf.py
+
+# ...
+
+# Specify 'dirhtml' as one of the builders
+html_theme = 'sphinx_rtd_theme'
+
+# Add 'dirhtml' to the 'html_theme_options' configuration
+html_theme_options = {
+    'style_nav_header_background': '#343131',
+}
+
+# Specify 'dirhtml' as one of the builders
+
+# ...
 
 
 # "sphinxext.rediraffe",
@@ -107,4 +139,5 @@ myst_enable_extensions = [
 
 def setup(app):
     app.add_css_file("custom.css")
-    # app.add_js_file("custom.js")
+    app.add_js_file("custom.js")
+
