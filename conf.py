@@ -15,7 +15,7 @@ author = 'Your Name'
 
 extensions = [
     'Pechakucha.pechakucha_directive',   
-     #"myst_nb",
+    "myst_nb",
     #"ablog",
     'sphinx.ext.intersphinx',
     "sphinx_design",
