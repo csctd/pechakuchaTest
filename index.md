@@ -13,5 +13,6 @@ More content you want on your page
 :hidden:
 
 someotherfile
+somefile
 ```
 <!-- pechakucha -->

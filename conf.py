@@ -15,7 +15,7 @@ author = 'Your Name'
 
 extensions = [
     'Pechakucha.pechakucha_directive',   
-     #"myst_nb",
+    "myst_nb",
     #"ablog",
     'sphinx.ext.intersphinx',
     "sphinx_design",
@@ -89,6 +89,8 @@ html_title = project
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+html_css_files = ['_static/pechakucha.css']
+
 
 # html_js_files = [
 #     'slides.js',
@@ -138,6 +140,6 @@ myst_enable_extensions = [
 ]
 
 def setup(app):
-    app.add_css_file("custom.css")
-    app.add_js_file("custom.js")
+    app.add_css_file("_static.pechakucha.css")
+    app.add_js_file("_static.pechakucha.js")
 
